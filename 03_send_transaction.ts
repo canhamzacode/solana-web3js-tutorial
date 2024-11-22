@@ -13,10 +13,10 @@ if (keyPair === null) {
 
 const connection = new Connection(clusterApiUrl("devnet"));
 const senderAddress = getKeypairFromEnvironment(keyPair);
-const receiverAddress = new PublicKey('receiver_address');
+const receiverAddress = new PublicKey('23wRQUTNurqBjnRYpwiSGKaUUAZTzi5so5mmhTgaJbWf');
 
 
-const amount = 1.5;
+const amount = 0.02;
 const transactionInstuction = SystemProgram.transfer({
   fromPubkey: senderAddress.publicKey,
   toPubkey: receiverAddress,
